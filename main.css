@@ -15,7 +15,6 @@ body{
 h1{
     font-size: 3.5rem;
     font-weight: 500;
-    text-decoration: underline;
 }
 ul{
     list-style:circle;
@@ -61,6 +60,9 @@ article{
     padding: 0px 5%;
     background-color: #CDCDCD;
 }
+.hi{
+    color: #0e84b3;
+}
 .dates{
     font-size: 1.12rem;
     color: #0e84b3;
@@ -93,7 +95,7 @@ h1.heading{
         background-position: 50% 30%;
     }
     .heading{
-        background-color: #CDCDCD;
+        background-color: #ebebeb;
         display: block;
     }
     img.heading{
@@ -102,7 +104,41 @@ h1.heading{
         display: none;
     }
     h1.heading{
-        font-size: 2.75rem;
+        font-size: 2.5rem;
+        color: #black;
+        position: re6lative;
+        top: 80%;
+        text-align: center;
+        text-decoration: none;
+    }
+    article{
+        padding: 2rem;
+    }
+}
+@media (max-width: 400px) {
+    html{
+        font-size: small;
+    }
+    header{
+        height: 325px;
+        background-image: url(images/pfp.jpg);
+        background-position: 50% 30%;
+    }
+    .heading{
+        background-color: #ebebeb;
+        display: block;
+    }
+    img.heading{
+        object-fit:cover;
+        object-position: 0% 60%;
+        display: none;
+    }
+    h2{
+        font-size: 1.9;
+        text-align: left;
+    }
+    h1.heading{
+        font-size: 2.5rem;
         color: #black;
         position: re6lative;
         top: 80%;
