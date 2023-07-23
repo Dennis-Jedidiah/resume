@@ -1,0 +1,151 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    font-size: medium;
+}
+body{
+    width: 100%;
+    color: #2f2f2f;
+    background-color: #ebebeb;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+}
+h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+ul{
+    list-style:circle;
+}
+a{
+    /* border-radius: 10px;
+    padding: 0.5px 3px; */
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #009e4c;
+    /* color: #ebebeb; */
+}
+h2{
+    color: #6a6a6a;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem; 
+}
+h3{
+    color: #6a6a6a;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem; 
+}
+img{
+ object-fit: cover;   
+}
+footer{
+    padding: 0px 5%;
+    background-color: #2f2f2f;
+    color: #CDCDCD;
+}
+header{
+    padding: 0px 10px;
+    height: 200px;
+    padding: 20px 0px;
+}
+article{
+    padding: 0px 5%;
+    background-color: #CDCDCD;
+}
+.hi{
+    color: #0e84b3;
+}
+.dates{
+    font-size: 1.12rem;
+    color: #0e84b3;
+}
+
+.heading{
+    display: inline-block;
+}
+.divider{
+    height: 1.5px;
+    margin: 0% 5% ;
+    background-color: black;
+}
+img.heading{
+    margin-left: 10px;
+    margin-right: 5%;
+    height: 100%;
+    width: 50%%;
+    border-radius: 10px;
+}
+h1.heading{
+    /* float: right; */
+    position: relative;
+    bottom: 50px;
+}
+@media (max-width: 770px) {
+    header{
+        height: 325px;
+        background-image: url(images/pfp.jpg);
+        background-position: 50% 30%;
+    }
+    .heading{
+        background-color: #ebebeb;
+        display: block;
+    }
+    img.heading{
+        object-fit:cover;
+        object-position: 0% 60%;
+        display: none;
+    }
+    h1.heading{
+        font-size: 2.5rem;
+        color: #black;
+        position: re6lative;
+        top: 80%;
+        text-align: center;
+        text-decoration: none;
+    }
+    article{
+        padding: 2rem;
+    }
+}
+@media (max-width: 400px) {
+    html{
+        font-size: small;
+    }
+    header{
+        height: 325px;
+        background-image: url(images/pfp.jpg);
+        background-position: 50% 30%;
+    }
+    .heading{
+        background-color: #ebebeb;
+        display: block;
+    }
+    img.heading{
+        object-fit:cover;
+        object-position: 0% 60%;
+        display: none;
+    }
+    h2{
+        font-size: 1.9;
+        text-align: left;
+    }
+    h1.heading{
+        font-size: 2.5rem;
+        color: #black;
+        position: re6lative;
+        top: 80%;
+        text-align: center;
+        text-decoration: none;
+    }
+    article{
+        padding: 2rem;
+    }
+}
