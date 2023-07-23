@@ -1,408 +1,306 @@
 <!DOCTYPE html>
 <html lang="en" class="">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Jedidiah Dennis</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-size: 100%;
-        vertical-align: baseline;
-        background: transparent;
-      }
 
-      #header {
-        color: aliceblue;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jedidiah Dennis</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <style>
+    body {
+      width: 100vw;
+    }
 
-      .background-hero {
-        background-image: url(./images/bg-hero.png);
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      vertical-align: baseline;
+      background: transparent;
+    }
 
-      img {
-        object-fit: cover;
-      }
+    #header {
+      color: aliceblue;
+    }
 
-      #hrd {
-        display: flex;
-        justify-content: center;
-      }
+    .background-hero {
+      background-image: url(./images/bg-hero.png);
+    }
 
-      #headerIMG {
+    .hobby_card>img {
+      object-position: 50% 40%;
+      height: 300px;
+    }
+
+    @media (min-width: 577px) {
+      .hobby_card {
         height: 500px;
       }
 
-      .hobby_card{
-        height: 300px;
+      .hobby_card>img {
+        height: 400px;
+        width: 265px;
       }
-    </style>
-  </head>
+    }
 
-  <body>
-    <div id="header" class="container-fluid bg-black">
-      <div
-        class="row justify-content-between align-items-center bg-black d-lg-flex flex-lg-row-reverse"
-      >
-        <div class="col-lg-5 p-0">
-          <img
-            src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg"
-            alt=""
-            class="w-100"
-            id="headerIMG"
-          />
+    #hrd {
+      display: flex;
+      justify-content: center;
+    }
+
+    #headerIMG {
+      height: 500px;
+    }
+
+    .hobby_card {
+      height: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header" class="container-fluid bg-black">
+    <div class="row justify-content-between align-items-center bg-black d-lg-flex flex-lg-row-reverse">
+      <div class="col-lg-5 p-0">
+        <img src="./images/andras-vas-Bd7gNnWJBkU-unsplash.jpg" alt="" class="w-100" id="headerIMG" />
+      </div>
+
+      <div class="col-md-7 px-5 py-5 text-start">
+        <h1 class="display-1">Hello there!</h1>
+        <p>Welcome to my site!</p>
+      </div>
+    </div>
+  </div>
+
+  <section id="main" class="p-sm-5 mx-1 my-3">
+    <div class="container" id="intro">
+      <div class="row">
+        <div class="col text-center">
+          <img src="./images/pfp.jpg" alt="" class="rounded-5 p-2 my-2" height="200px" />
         </div>
-
-        <div class="col-md-7 px-5 py-5 text-start">
-          <h1 class="display-1">Hello there!</h1>
-          <p>Welcome to my site!</p>
+      </div>
+      <div class="row text-center py-3">
+        <div class="col">
+          <h2 class="display-6">Hi</h2>
+          <p>
+            My name is Jedidiah and im a CS major in
+            <a class="" href="https://ontariotechu.ca/">Ontario tech.</a>
+          </p>
         </div>
       </div>
     </div>
 
-    <section id="main" class="p-5 mx-1 my-3">
-      <div class="container" id="intro">
-        <div class="row">
-          <div class="col text-center">
-            <img
-              src="./images/pfp.jpg"
-              alt=""
-              class="rounded-5 p-2 my-2"
-              height="200px"
-            />
-          </div>
-        </div>
-        <div class="row text-center py-3">
-          <div class="col">
-            <h2 class="display-6">Hi</h2>
-            <p>
-              My name is Jedidiah and im a CS major in
-              <a class="" href="https://ontariotechu.ca/">Ontario tech.</a>
-            </p>
-          </div>
-        </div>
-      </div>
+    <div id="hrd">
+      <hr class="w-75 my-4 py-4" />
+    </div>
 
-      <div id="hrd">
-        <hr class="w-75 my-4 py-4" />
-      </div>
-
-      <div class="container py-3" id="hobbies">
-        <h2 class="">What do I do?</h2>
-        <p class="">Well, apart from programming, I like to...</p>
-        <div class="row">
-
-          <div class="col-lg-6 py-2">
-            <div class="hobby_card d-flex flex-row bg-secondary-subtle rounded-3">
-              <p class="align-self-center px-3">
-                <span class="d-block fs-4 lead py-2">
-                  Watch Horror movies
-                </span>
-                I'm a movie guy. My favourite genre is Horror, I just love the
-                rush of a good horror. Currently, my favourite horror movie is
-                Scream 6. I just loved when <b>REDACTED.</b>
-              </p>
-              <img
-                src="./images/nik-S6ikL0QoeJw-unsplash.jpg"
-                class="h-100 rounded-end-3"
-                width="168px"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-6 py-2">
-            <div class="hobby_card d-flex flex-row bg-secondary-subtle rounded-3">
-              <p class="align-self-center px-3">
-                <span class="d-block fs-4 lead py-2"> Play Basketball </span>
-                I really like basketball. I dont watch NBA too often tho, i
-                prefer streetball, but my favourite team are the Warriors.
-              </p>
-              <img
-                src="./images/stephen-baker-QAX5Ylx-lKo-unsplash.jpg"
-                class=" h-100 rounded-end-3"
-                width="168px"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-6 py-2">
-            <div class="hobby_card d-flex flex-row bg-secondary-subtle rounded-3">
-              <p class="align-self-center px-3">
-                <span class="d-block fs-4 lead py-2"> Read books </span>
-                I dont read a lot but when I do, I prefer to read non-fiction
-                books and mystery/thrillers. One of my favourite books is
-                <span class="fst-italic">Half of a yellow Sun</span> by
-                Chimamanda Ngozi Adichie.
-              </p>
-              <img
-                src="./images/julia-kicova-g827ZOCwt30-unsplash.jpg"
-                class="h-100 rounded-end-3"
-                width="168px"
-                alt=""
-              />
-            </div>
-          </div>
-
-          <div class="col-lg-6 py-2">
-            <div class="hobby_card d-flex flex-row bg-secondary-subtle rounded-3">
-              <p class="align-self-center px-3">
-                <span class="d-block fs-4 lead py-2"> Adventure </span>
-                I am a bit of a thrill seeker (if you couldn't already tell.) I
-                love going to new places, meeting new people and experiencing
-                new things.
-              </p>
-              <img
-                src="./images/didin-emelu-8--kuxbxuKU-unsplash.jpg"
-                class="h-100 rounded-end-3"
-                width="168px"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="hrd">
-        <hr class="w-75 my-4 py-4" />
-      </div>
-
-      <div class="container text-start" id="employers">
-        <h2>For Employers</h2>
-        <p>
-          If you like what I've done with this website and want to hire me, you
-          can check out my resume/portfolio
-          <a href="under_construction.html" class="link-dark link-opacity-75-hover">here</a>
-        </p>
-      </div>
-
-      <div id="hrd">
-        <hr class="w-75 my-4 py-4" />
-      </div>
-
-      <div class="container text-start my-3 py-3" id="contact">
-        <h2>Contact me</h2>
-        <p>You can contact me on</p>
-        <span>
+    <div class="container py-3" id="hobbies">
+      <h2 class="">What do I do?</h2>
+      <p class="">Well, apart from programming, I like to...</p>
+      <div class="row mt-5 mt-sm-0 pt-sm-1 px-sm-1">
+        <div class="col-lg-6 py-2 my-2 my-sm-1">
           <div
-            class="d-flex flex-column fw-medium flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center"
-          >
-            <div class="list-group">
-              <a
-                href="https://www.snapchat.com/add/alreadytakeniii"
-                class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3"
-                aria-current="true"
-              >
-                <img
-                  src="https://img.icons8.com/material/32/snapchat.png"
-                  alt="twbs"
-                  width="32"
-                  height="32"
-                  class="rounded-circle flex-shrink-0"
-                />
-                <div class="d-flex gap-2 w-100 justify-content-between">
-                  <div>
-                    <h6 class="mb-0">Snapchat</h6>
-                  </div>
-                </div>
-              </a>
+            class="hobby_card d-flex w-100 flex-column-reverse flex-sm-row bg-secondary-subtle rounded-3 my-2 my-sm-1">
+            <p class="align-self-center px-3 pt-1 pb-5 py-sm-2 h-25">
+              <span class="d-block fs-4 lead py-sm-2">
+                Watch Horror movies
+              </span>
+              I just love the rush of a good horror. Currently, my favourite horror movie is Scream 6.
+            </p>
+            <img src="./images/nik-S6ikL0QoeJw-unsplash.jpg" class="object-fit-cover img-fluid rounded-3" width=""
+              alt="" />
+          </div>
+        </div>
 
-              <a
-                href="https://www.instagram.com/blvckboy.69/"
-                class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3"
-                aria-current="true"
-              >
-                <img
-                  src="https://img.icons8.com/glyph-neue/32/instagram-new--v1.png"
-                  alt="twbs"
-                  width="32"
-                  height="32"
-                  class="rounded-circle flex-shrink-0"
-                />
-                <div class="d-flex gap-2 w-100 justify-content-between">
-                  <div>
-                    <h6 class="mb-0">Instagram</h6>
-                  </div>
-                </div>
-              </a>
+        <div class="col-lg-6 py-2 my-2 my-sm-1">
+          <div
+            class="hobby_card d-flex w-100 flex-column-reverse flex-sm-row bg-secondary-subtle rounded-3 my-2 my-sm-1">
+            <p class="align-self-center px-3 py-2 h-25">
+              <span class="d-block fs-4 lead py-sm-2"> Play Basketball </span>
+              I dont watch NBA too often, I prefer streetball, but my favourite team is the Warriors.
+            </p>
+            <img src="./images/stephen-baker-QAX5Ylx-lKo-unsplash.jpg" class="object-fit-cover img-fluid rounded-3"
+              width="" alt="" />
+          </div>
+        </div>
 
-              <a
-                href="https://www.linkedin.com/in/jedidiah-dennis-9a7844263/"
-                class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3"
-                aria-current="true"
-              >
-                <img
-                  src="https://img.icons8.com/glyph-neue/32/linkedin.png"
-                  alt="twbs"
-                  width="32"
-                  height="32"
-                  class="rounded-circle flex-shrink-0"
-                />
-                <div class="d-flex gap-2 w-100 justify-content-between">
-                  <div>
-                    <h6 class="mb-0">LinkedIn</h6>
-                  </div>
-                </div>
-              </a>
+        <div class="col-lg-6 py-2 my-2 my-sm-1">
+          <div
+            class="hobby_card d-flex w-100 flex-column-reverse flex-sm-row bg-secondary-subtle rounded-3 my-2 my-sm-1">
+            <p class="align-self-center px-3 py-2 h-25">
+              <span class="d-block fs-4 lead py-sm-2"> Read books </span>
+              I dont read a lot but when I do, I prefer to read non-fiction,
+              mystery and thrillers books.
+            </p>
+            <img src="./images/julia-kicova-g827ZOCwt30-unsplash.jpg" class="object-fit-cover img-fluid rounded-3"
+              width="" alt="" />
+          </div>
+        </div>
 
-              <a
-                href="mailto:thejedidiahdennis@gmail.com"
-                class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3"
-                aria-current="true"
-              >
-                <img
-                  src="https://img.icons8.com/ios/50/new-post--v1.png"
-                  alt="twbs"
-                  width="28"
-                  height="28"
-                  class="flex-shrink-0"
-                />
-                <div class="d-flex gap-2 w-100 justify-content-between">
-                  <div>
-                    <h6 class="mb-0">thejedidiahdennis@gmail.com</h6>
-                  </div>
-                </div>
-              </a>
+        <div class="col-lg-6 py-2 my-2 my-sm-1">
+          <div
+            class="hobby_card d-flex w-100 flex-column-reverse flex-sm-row bg-secondary-subtle rounded-3 my-2 my-sm-1">
+            <p class="align-self-center px-3 py-2 h-25">
+              <span class="d-block fs-4 lead py-sm-2"> Adventure </span>
+              I love going to new places, meeting new people and experiencing
+              new things.
+            </p>
+            <img src="./images/didin-emelu-8--kuxbxuKU-unsplash.jpg" class="object-fit-cover img-fluid rounded-3"
+              width="" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-              <div
-                class="list-group-item bg-secondary-subtle list-group-item-action align-items- d-flex gap-3 py-3 dropdown-toggle"
-                data-bs-toggle="dropdown"
-              >
-                <img
-                  width="32"
-                  class="mx-1"
-                  height="32"
-                  src="https://img.icons8.com/glyph-neue/32/github.png"
-                  alt="github"
-                />
-                <div class="dropdown">
-                  <p class="">My Github accounts</p>
-                  <div class="dropdown-menu dropdown-">
-                    <a
-                      class="dropdown-item link-dark"
-                      href="https://github.com/Dennis-Jedidiah"
-                      >(professional) Dennis-Jedidiah</a
-                    >
-                    <div class="dropdown-divider"></div>
-                    <a
-                      class="dropdown-item link-dark"
-                      href="https://github.com/og-JND"
-                      >(Casual) Dennis-Jedidiah</a
-                    >
-                  </div>
+    <div id="hrd">
+      <hr class="w-75 my-4 py-4" />
+    </div>
+
+    <div class="container text-start" id="employers">
+      <h2>For Employers</h2>
+      <p>
+        If you like what I've done with this website and want to hire me, you
+        can check out my resume/portfolio
+        <a href="under_construction.html" class="link-dark link-opacity-75-hover">here</a>
+      </p>
+    </div>
+
+    <div id="hrd">
+      <hr class="w-75 my-4 py-4" />
+    </div>
+
+    <div class="container text-start my-3 py-3" id="contact">
+      <h2>Contact me</h2>
+      <p>You can contact me on</p>
+      <span>
+        <div
+          class="d-flex flex-column fw-medium flex-md-row p-4 gap-4 py-md-5 align-items-center justify-content-center">
+          <div class="list-group">
+            <a href="https://www.snapchat.com/add/alreadytakeniii"
+              class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3" aria-current="true">
+              <img src="https://img.icons8.com/material/32/snapchat.png" alt="twbs" width="32" height="32"
+                class="rounded-circle flex-shrink-0" />
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">Snapchat</h6>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.instagram.com/blvckboy.69/"
+              class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3" aria-current="true">
+              <img src="https://img.icons8.com/glyph-neue/32/instagram-new--v1.png" alt="twbs" width="32" height="32"
+                class="rounded-circle flex-shrink-0" />
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">Instagram</h6>
+                </div>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jedidiah-dennis-9a7844263/"
+              class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3" aria-current="true">
+              <img src="https://img.icons8.com/glyph-neue/32/linkedin.png" alt="twbs" width="32" height="32"
+                class="rounded-circle flex-shrink-0" />
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">LinkedIn</h6>
+                </div>
+              </div>
+            </a>
+
+            <a href="mailto:thejedidiahdennis@gmail.com"
+              class="list-group-item bg-secondary-subtle list-group-item-action d-flex gap-3 py-3" aria-current="true">
+              <img src="https://img.icons8.com/ios/50/new-post--v1.png" alt="twbs" width="28" height="28"
+                class="flex-shrink-0" />
+              <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                  <h6 class="mb-0">thejedidiahdennis@gmail.com</h6>
+                </div>
+              </div>
+            </a>
+
+            <div
+              class="list-group-item bg-secondary-subtle list-group-item-action align-items- d-flex gap-3 py-3 dropdown-toggle"
+              data-bs-toggle="dropdown">
+              <img width="32" class="mx-1" height="32" src="https://img.icons8.com/glyph-neue/32/github.png"
+                alt="github" />
+              <div class="dropdown">
+                <p class="">My Github accounts</p>
+                <div class="dropdown-menu dropdown-">
+                  <a class="dropdown-item link-dark" href="https://github.com/Dennis-Jedidiah">(professional)
+                    Dennis-Jedidiah</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item link-dark" href="https://github.com/og-JND">(Casual) Dennis-Jedidiah</a>
                 </div>
               </div>
             </div>
           </div>
-        </span>
-      </div>
-    </section>
+        </div>
+      </span>
+    </div>
+  </section>
 
-    <div class="container-fluid bg-black">
-      <!-- fix the layout of the footer -->
-      <footer class="py-3">
-
-        <div class="container-md my-1 py-1 px-0">
-          <ul class="list-unstyled d-flex flex-row justify-content-evenly">
-            <li class="">
-              <a href="#header" class="text-decoration-none text-white-50"
-                >Home</a
-              >
-            </li>
-            <li class="">
-              <a href="#hobbies" class="text-decoration-none text-white-50"
-                >Hobbies</a
-              >
-            </li>
-            <li class="">
-              <a href="#employers" class="text-decoration-none text-white-50"
-                >For Employers</a
-              >
-            </li>
-            <li class="">
-              <a href="#contact" class="text-decoration-none text-white-50"
-                >Contact</a
-              >
-            </li>
-            <li class="">
-              <div class="dropdown">
-                <button
-                  class="dropdown-toggle text-white-50"
-                  data-bs-toggle="dropdown"
-                >
-                  Icons:
-                </button>
-                <div class="dropdown-menu">
-                  <div class="dropdown-item text-start">
-                    <a
-                      class="text-dark"
-                      href="https://icons8.com/icon/32867/snapchat"
-                      >Snapchat</a
-                    >
-                    icon by
-                    <a class="text-dark" href="https://icons8.com"
-                      >Icons8</a
-                    >
-                  </div>
-                  <div class="dropdown-item text-start">
-                    <a
-                      class="text-dark"
-                      href="https://icons8.com/icon/RhYNENh5cxlS/instagram"
-                      >Instagram</a
-                    >
-                    icon by
-                    <a class="text-dark" href="https://icons8.com"
-                      >Icons8</a
-                    >
-                  </div>
-                  <div class="dropdown-item text-start">
-                    <a
-                      class="text-dark"
-                      href="https://icons8.com/icon/IuI5Yd3J3qcC/linkedin"
-                      >LinkedIn</a
-                    >
-                    icon by
-                    <a class="text-dark" href="https://icons8.com"
-                      >Icons8</a
-                    >
-                  </div>
-                  <div class="dropdown-item text-start">
-                    <a
-                      class="text-dark"
-                      href="https://icons8.com/icon/3tC9EQumUAuq/github"
-                      >GitHub</a
-                    >
-                    icon by
-                    <a class="text-dark" href="https://icons8.com"
-                      >Icons8</a
-                    >
-                  </div>
+  <div class="container-fluid bg-black">
+    <!-- fix the layout of the footer -->
+    <footer class="py-3">
+      <div class="container-md my-1 py-1 px-0">
+        <ul class="list-unstyled d-flex flex-column flex-sm-row justify-content-evenly">
+          <li class="">
+            <a href="#header" class="text-decoration-none text-white-50">Home</a>
+          </li>
+          <li class="">
+            <a href="#hobbies" class="text-decoration-none text-white-50">Hobbies</a>
+          </li>
+          <li class="">
+            <a href="#employers" class="text-decoration-none text-white-50">For Employers</a>
+          </li>
+          <li class="">
+            <a href="#contact" class="text-decoration-none text-white-50">Contact</a>
+          </li>
+          <li class="">
+            <div class="dropdown">
+              <button class="dropdown-toggle text-white-50" data-bs-toggle="dropdown">
+                Icons:
+              </button>
+              <div class="dropdown-menu">
+                <div class="dropdown-item text-start">
+                  <a class="text-dark" href="https://icons8.com/icon/32867/snapchat">Snapchat</a>
+                  icon by
+                  <a class="text-dark" href="https://icons8.com">Icons8</a>
+                </div>
+                <div class="dropdown-item text-start">
+                  <a class="text-dark" href="https://icons8.com/icon/RhYNENh5cxlS/instagram">Instagram</a>
+                  icon by
+                  <a class="text-dark" href="https://icons8.com">Icons8</a>
+                </div>
+                <div class="dropdown-item text-start">
+                  <a class="text-dark" href="https://icons8.com/icon/IuI5Yd3J3qcC/linkedin">LinkedIn</a>
+                  icon by
+                  <a class="text-dark" href="https://icons8.com">Icons8</a>
+                </div>
+                <div class="dropdown-item text-start">
+                  <a class="text-dark" href="https://icons8.com/icon/3tC9EQumUAuq/github">GitHub</a>
+                  icon by
+                  <a class="text-dark" href="https://icons8.com">Icons8</a>
                 </div>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-        <hr class="text-white">
-        <p class="text-white-50 text-center">© 2023 Jedidiah</p>
-      </footer>
+      <hr class="text-white" />
+      <p class="text-white-50 text-center">© 2023 Jedidiah</p>
+    </footer>
+  </div>
 
-    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>
